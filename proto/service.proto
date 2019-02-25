@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package proto;
+
+message Request {
+    int64 a = 1;
+    int64 b = 2;
+}
+
+message Response {
+    int64 result = 1;
+}
+
+//сервис берет Requst возвращает Response
+service AddService {
+    // rpc Add название функции, что функция берет Request, что возвращает Response
+    rpc Add(Request) returns (Response);
+    //наш сервис может иметь несколько функций
+    rpc Multiply(Request) returns (Response);
+}
