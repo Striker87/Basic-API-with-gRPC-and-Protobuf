@@ -2,10 +2,11 @@ package main
 
 import (
 	"context"
-	"gRPC_tutorial/proto"
+	"net"
+
+	"github.com/Striker87/Basic-API-with-gRPC-and-Protobuf/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
-	"net"
 )
 
 //рабочий пример
