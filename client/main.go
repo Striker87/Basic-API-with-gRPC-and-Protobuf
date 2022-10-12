@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-	"gRPC_tutorial/proto"
-	"github.com/gin-gonic/gin"
-	"google.golang.org/grpc"
 	"log"
 	"net/http"
 	"strconv"
+
+	"github.com/Striker87/Basic-API-with-gRPC-and-Protobuf/proto"
+	"github.com/gin-gonic/gin"
+	"google.golang.org/grpc"
 )
 
 func main() {
